@@ -1,0 +1,77 @@
+.follow {
+  height: 174px;
+  width:135px;
+  background-color: #ffffff;
+
+
+  .follow-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+    .follow-avatar-border {
+      padding:3px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border:1px solid #00b3b3;
+
+      .follow-avatar-wrapper {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .follow-avatar {
+          background: url("/assets/img/avatar-Johanson.jpg") no-repeat 50%;
+          background-size: cover;
+          height: 150px;
+          overflow: hidden;
+
+
+
+        }
+      }
+    }
+
+  }
+}
+
+.follow-inf {
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  flex-direction: column;
+  height:15px;
+  width: 100%;
+  h5 {
+    font-size: 8px;
+    color: #848484;
+  }
+  span {
+    font-size: 6px;
+    padding-top: 2px;
+    color: #00b3b3;
+  }
+
+}
+
+.btn-follow {
+  padding: 5px 30px;
+  background-color: #00b3b3;
+  color: #ffffff;
+  border:1px solid #00b3b3;
+  cursor: pointer;
+  &:active, &:focus, &:hover {
+    background-color: #009393;
+    transition: 0.3s;
+  }
+
+  i {
+    font-size: 14px;
+
+  }
+}

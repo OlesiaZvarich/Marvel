@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel</title>
+    <link rel="stylesheet" href="build/styles.css">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <header>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="banner slider1"></div>
+                        <div class="banner slider2"></div>
+                        <div class="banner slider3"></div>
+                    </div>
+                    <div class="slider-control">
+                        <div class="block-arrow">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                        </div>
+                        <div class="dots" style="text-align: center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                        <div class="block-arrow">
+                            <a class="next" onclick="plusSlides(1)">&#10095</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="block-icon twitter">
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="block-icon dribble">
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="block-icon google">
+                        <a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="block-icon facebook">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <div class="avatar-img">
+                        <div class="avatar-inf">
+                            <h5>Tony Stark is Iron Man</h5>
+                            <span>Posted on 30th August 2013</span>
+                        </div>
+                        <div class="avatar-active">
+                            <div><i class="fa fa-eye" aria-hidden="true"></i><span>256</span></div>
+                            <div><i class="fa fa-comment-o" aria-hidden="true"></i><span>12</span></div>
+                            <div><i class="fa fa-heart-o" aria-hidden="true"></i><span>63</span></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="content1">
+                    <div class="main-menu">
+                        <ul>
+                            <li><a href="#">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li>
+                                <div class="search">
+                                    <input type="text" placeholder="Search">
+                                    <button>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content3">
+                        <div class="content4">
+                            <div class="follow">
+                                <div class="follow-wrapper">
+                                    <div class="follow-avatar-border">
+                                        <div class="follow-avatar-wrapper">
+                                            <div class="follow-avatar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="follow-inf">
+                                        <h5>Scarlett Johansson</h5>
+                                        <span>Black Widow</span>
+                                    </div>
+                                    <button class="btn-follow">
+                                        Follow
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item1">
+                                    <span>Dropdown Normal</span>
+                                    <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Option One</a></li>
+                                        <li><a href="#">Option Two</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content5">
+                            <div class="forecast">
+                                <div class="tab-content">
+                                    <div id="tab1" class="tab-pane fade in active">
+                                       <span>Exeter, UK</span>
+                                       <span>&#176;F &#176;C</span>
+                                        <div>
+                                            <i class="fa fa-cloud" aria-hidden="true"></i> 21&#176;
+                                        </div>
+                                    </div>
+                                    <div id="tab2" class="tab-pane fade">
+                                        <span>Exeter, UK</span>
+                                        <span>&#176;F &#176;C</span>
+                                        <div>
+                                            <i class="fa fa-sun-o" aria-hidden="true"></i> 22&#176;
+                                        </div>
+                                    </div>
+                                    <div id="tab3" class="tab-pane fade">
+                                        <span>Exeter, UK</span>
+                                        <span>&#176;F &#176;C</span>
+                                        <div>
+                                            <i class="fa fa-cloud" aria-hidden="true"></i> 23&#176;
+                                        </div>
+                                    </div>
+                                    <div id="tab4" class="tab-pane fade">
+                                        <span>Exeter, UK</span>
+                                        <span>&#176;F &#176;C</span>
+                                        <div>
+                                            <i class="fa fa-sun-o" aria-hidden="true"></i> 24&#176;
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#tab1">
+                                            <i class="fa fa-cloud" aria-hidden="true"></i>
+                                            <span>Monday</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tab2">
+                                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                                            <span>Tuesday</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tab3">
+                                            <i class="fa fa-cloud" aria-hidden="true"></i>
+                                           <span>Wednesday</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tab4">
+                                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                                            <span>Thursday</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="message">
+                                <div class="alert alert-success alert-dismissible fade in">
+                                    <button class="close" data-dismiss="alert" aria-label="close">&times;</button>
+                                    Congratulations! You have been successful
+                                </div>
+                                <div class="alert alert-info alert-dismissible fade in">
+                                    <button class="close" data-dismiss="alert" aria-label="close">&times;</button>
+                                    Attention! I recommend you to look at me
+                                </div>
+                                <div class="alert alert-warning alert-dismissible fade in">
+                                    <button class="close" data-dismiss="alert" aria-label="close">&times;</button>
+                                    Warning! Are you sure you want to do this?
+                                </div>
+                                <div class="alert alert-danger alert-dismissible fade in">
+                                    <button class="close" data-dismiss="alert" aria-label="close">&times;</button>
+                                    Oops! Somethings gone wrong
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content6">
+                            <div class="calendar">
+                                <div id="datepickerBlock"></div>
+                            </div>
+                            <form name="formLogin">
+                                <div class="form-wrapper">
+                                    <div class="block-username">
+                                        <span id="errorName"></span>
+                                        <input id="input-username" name="username" placeholder="Username" type="text">
+                                    </div>
+                                    <div class="block-password">
+                                        <span id="errorPassword"></span>
+                                        <input id="input-password" name="password" placeholder="Password" type="text">
+                                    </div>
+                                    <div class="block-email">
+                                        <span id="errorEmail"></span>
+                                        <input id="input-email" name="email" placeholder="Email" type="text">
+                                    </div>
+                                    <div class="active">
+                                        <input id="input-active" name="active" placeholder="Active" type="text">
+                                    </div>
+                                    <textarea id="textarea-msg" name="message" placeholder="Message"></textarea>
+                                    <button id="btn-login">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="content2">
+                    <div class="aside-menu">
+                        <ul class="accordion">
+                            <li>
+                                <h5 class="toggle">
+                                    Web Design
+                                    <span class="quantity-of-items">12</span>
+                                </h5>
+                                <ul class="inner active">
+                                    <li>
+                                        Ecommerce
+                                        <span class="quantity-of-items">3</span>
+                                    </li>
+                                    <li>
+                                        Blogs
+                                        <span class="quantity-of-items">3</span>
+                                    </li>
+                                    <li>
+                                        Portfolio
+                                        <span class="quantity-of-items">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5 class="toggle">
+                                    Print Design
+                                    <span class="quantity-of-items">16</span>
+                                </h5>
+                                <ul class="inner">
+                                    <li>
+                                        Ecommerce
+                                        <span class="quantity-of-items">3</span>
+                                    </li>
+                                    <li>
+                                        Blogs
+                                        <span class="quantity-of-items">3</span>
+                                    </li>
+                                    <li>
+                                        Portfolio
+                                        <span class="quantity-of-items">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5 class="toggle" >
+                                    Photography
+                                    <span class="quantity-of-items">52</span>
+                                </h5>
+                                <ul class="inner">
+                                    <li>
+                                        Ecommerce
+                                        <span class="quantity-of-items">3</span>
+                                    </li>
+                                    <li>
+                                        Blogs
+                                        <span class="quantity-of-items">3</span>
+                                    </li>
+                                    <li>
+                                        Portfolio
+                                        <span class="quantity-of-items">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="switch">
+                        <div class="switch-item">
+                            <h5>
+                                Switch ON
+                                <i class="fa fa-toggle-on" aria-hidden="true"></i>
+                            </h5>
+                        </div>
+                        <div class="switch-item">
+                            <h5>
+                                Switch OFF
+                                <i class="fa fa-toggle-off" aria-hidden="true"></i>
+                            </h5>
+                        </div>
+                        <div class="range-slider">
+                            <input type="range"  min="0" max="100" value="30"/>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script type="text/javascript" src="build/scripts.min.js"></script>
+</body>
+</html>
